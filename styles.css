@@ -1,0 +1,219 @@
+@font-face {
+    font-family: threads;
+    src: url(font.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(16, 16, 16);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+a{
+    color: inherit;
+}
+#lil-img{
+    position: absolute;
+    display: none;
+    top: 5vh;
+    width: 35px;
+    height: 35px;
+}
+#loader {
+    z-index: 1000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(16, 16, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-img {
+    width: 5vw;
+    height: 5vw;
+}
+#footer-img {
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    bottom: 10vh;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(16, 16, 16);
+}
+#container {
+    z-index: 100;
+    margin-top: 18vw;
+    text-align: center;
+    height: 50vh;
+}
+#up-img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+}
+#text {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+}
+#usrname{
+    padding: 20px;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    margin-top: 15px;
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+#password {
+    padding: 20px;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    margin-top: 7.5px;
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+#password:focus, #usrname:focus {
+    outline: none;
+}
+#btn-sbt {
+    padding: 20px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: rgb(172, 176, 180);
+    margin-top: 7.5px;
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+}
+#insta {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(172, 176, 180);
+    margin-top: 25px;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+    border: 0.25px solid rgb(58, 57, 57);
+}
+#text2 {
+    font-size: 15px;
+    background: rgb(16, 16, 16);
+    margin-top: 20px;
+    color: rgb(100, 100, 100);
+}
+#text3 {
+    width: 15%;
+    margin-left: 40%;
+    border-radius: 50%;
+    margin-top: -30px;
+    background: rgb(16, 16, 16);
+    color: #646464;
+}
+#text4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+#line {
+    margin-top: 20px;
+    height: 20px;
+    border-top: 0.015px solid #3a3939 !important;
+}
+#icon-insta {
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+}
+#nigga {
+    margin-left: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+    #container {
+        margin-top: 30vw;
+        height: auto;
+    }
+    #usrname, #password, #btn-sbt, #insta {
+        width: 100%;
+    }
+    #up-img{
+        display: none;
+
+    }
+    #lil-img{
+        display: block;
+    }
+    #insta{
+        margin-left: 15px;
+    }
+    #main-img{
+        width: 60px;
+        height: 60px;
+    }
+    #footer-img{
+        width: 60px;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    body{
+        overflow: hidden;
+    }
+    #container{
+        margin-top: 5vh;
+    }
+    #usrname, #password, #btn-sbt, #insta {
+        width: 100%;
+    }
+    #text3 {
+        width: 20%;
+        margin-left: 40%;
+    }
+    #text4 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    #up-img{
+        display: none;
+
+    }
+    #lil-img{
+        display: block;
+    }
+    #insta{
+        margin-left: 15px;
+    }
+    #main-img{
+        width: 60px;
+        height: 60px;
+    }
+    #footer-img{
+        width: 60px;
+        height: auto;
+    }
+}
